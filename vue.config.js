@@ -27,7 +27,7 @@ module.exports = {
         target: 'https://wudeng.tooaa.com',
         changeOrigin: true,
         pathRewrite: {
-          '/api': '',
+          '^/api': '',
         },
       },
     },
