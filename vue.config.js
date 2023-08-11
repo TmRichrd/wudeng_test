@@ -24,7 +24,7 @@ module.exports = {
     port: 3008,
     proxy: {
       '/api': {
-        target: target,
+        target: 'https://wudeng.tooaa.com',
         changeOrigin: true,
         pathRewrite: {
           '/api': '',
