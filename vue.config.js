@@ -23,11 +23,12 @@ module.exports = {
     host: '0.0.0.0',
     port: 3008,
     proxy: {
-      '/api': {
+      '/apis': {
         target: 'https://wudeng.tooaa.com',
         changeOrigin: true,
+        secure: true,
         pathRewrite: {
-          '^/api': '',
+          '^/apis': '',
         },
       },
     },
