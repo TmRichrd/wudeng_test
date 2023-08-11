@@ -9,8 +9,7 @@
   NPM_VERSION = "8.15.0"
 
 [[redirects]]
-  from = "/apis/"
-  to = "https://wudeng.tooaa.com"
+  from = "/apis/*"
+  to = "https://wudeng.tooaa.com/:splat"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
