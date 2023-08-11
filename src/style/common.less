@@ -1,0 +1,583 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-family: "Microsoft Yahei",sans-serif;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}   
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.text_center{
+    text-align: center;
+}
+.text_left{
+    text-align: left;
+}
+.text_right{
+    text-align: right;
+}
+.ver_align{
+   vertical-align: middle;
+}
+.rflex{
+    display: flex;
+    flex-direction: row;
+}
+.cflex{
+    display: flex;
+    flex-direction: column;
+}
+.wflex{
+    flex:1;
+}
+
+
+// 公共的color
+@left-bgColor:#2a3542;  // 左侧菜单背景颜色;
+
+
+
+//页面的公共样式
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.el-table .odd-row {
+   background:#eaefea;
+}
+.el-table .even-row {
+   background: #d9e6f1;
+}
+
+.fillcontain{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.fillcontainer{
+    width:100%;
+    text-align:center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.tabContainer{
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 2px;
+}
+.echartsPosition{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px #FF6C60;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+  *{
+    box-sizing: border-box;
+  }
+  #app,.home{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+  .fr{
+    float: right;
+  }
+  .fl{
+    float: left;
+  }
+  .flex-row{
+    display: flex;
+    flex: row;
+  }
+  .flex1{
+    flex: 1;
+  }
+
+  .el-submenu .el-menu-item{
+    padding-left: 48px !important;
+    min-width:51px !important;
+  }
+
+
+  .four-border{
+    background:
+      linear-gradient(to top, #39E5EF, #39E5EF) left top no-repeat,/*上左*/
+      linear-gradient(to right, #39E5EF, #39E5EF) left top no-repeat,/*左上*/
+      linear-gradient(to left, #39E5EF, #39E5EF) right top no-repeat,/*上右*/
+      linear-gradient(to bottom, #39E5EF, #39E5EF) right top no-repeat,/*上右*/
+      linear-gradient(to left, #39E5EF, #39E5EF) left bottom no-repeat,/*下左*/
+      linear-gradient(to bottom, #39E5EF, #39E5EF) left bottom no-repeat,/*左下*/
+      linear-gradient(to top, #39E5EF, #39E5EF) right bottom no-repeat,/*下右*/
+      linear-gradient(to left, #39E5EF, #39E5EF) right bottom no-repeat;/*右下*/
+      background-size: 2px 18px, 18px 2px, 2px 18px, 18px 2px;
+  }
+
+  .bread-content{
+      padding-top: 35px;
+  }
+  .el-form-item__label{
+    color: #fff !important;
+  }
+  .el-input__inner{
+    color: #fff !important;
+    background: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .blue2Btn{
+    border-radius: 2px !important;
+    background-color:@btnPrimary2;
+    border:1px solid @btnPrimary2;
+  }
+
+  .form-wrap{
+    background: @adminBlue7;
+    padding: 22px;
+    .form-btn-wrap{
+        margin-left: 48px;
+    }
+  }
+  .el-button,.el-button--primary{
+    color: #fff;
+    border-radius: 2px !important;
+    background-color:@btnPrimary2;
+    border:1px solid @btnPrimary2;
+  }
+  .transparent-btn{
+    border-radius: 2px !important;
+    background: none !important;
+    border: 1px solid #346CD7 !important;
+  }
+  .child-menu{
+    .el-submenu__title{
+      padding-left: 48px !important;
+    }
+    .el-menu{
+      text-indent:14px;
+    }
+  }
+
+
+  .section-title{
+    width: 100%;
+    line-height: 62px;
+    padding: 0 21px;
+    border-bottom: 1px solid @adminBlue8;
+  }
+  // tab
+  .box-nav{
+    .el-tabs__header{
+      background: none !important;
+      border-bottom: none !important;
+      .el-tabs__item{
+        color: #fff !important;
+        border-color: transparent!important;
+      }
+      .el-tabs__item.is-active{
+        border-color: @btnPrimary2 !important;
+        background: @btnPrimary2 !important;
+      }
+    }
+  }
+  .line-nav{
+    .el-tabs__header{
+      background: none !important;
+      border-bottom: none !important;
+      .el-tabs__item{
+        color: #fff !important;
+        border-color: transparent!important;
+      }
+      .el-tabs__item.is-active{
+          background: none !important;
+          color: #50ABFF !important;
+      }
+      .el-tabs__item.is-disabled{
+        color: #aaa !important;
+        cursor:not-allowed;
+      }
+    }
+  }
+  .el-tabs--border-card{
+    background: none !important;
+    border: none !important;
+  }
+  
+  .form-input{
+    .el-input{
+      width: 220px !important;
+    }
+  }
+  .samll-input{
+    width: 90px !important;
+  }
+  .el-select-dropdown{
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    background: @adminBlue7 !important;
+    .el-select-dropdown__item{
+      color: #fff !important;
+    }
+    .el-select-dropdown__item:hover{
+      background: @adminBlue !important;
+    }
+    .el-select-dropdown__item{
+      background: none !important;
+    }
+  }
+  .popper__arrow::after{
+    border-bottom-color: @adminBlue !important;
+  }
+
+  .blue7{
+    background: @adminBlue7;
+  }
+
+  .marl20{
+    margin-left: 20px;
+  }
+
+  .bluetab{
+    .el-table{
+      border-radius: 4px;
+    }
+    .el-table th{
+      text-align: center;
+      background: #37548E !important;
+    }
+    .el-table::before{
+      height: 0;
+    }
+    .el-table th.is-leaf,.el-table td{
+      text-align: center;
+      color:#fff;
+      border-color: rgba(255, 255, 255, .3) !important;
+    }
+    .el-table tr{
+      background: #4D6BA5 !important;
+    }
+    .el-table tr:hover>td{
+      background: #6B84B4 !important;
+    }
+    .el-table__body tr.current-row>td{
+      background: #6B84B4 !important;
+    }
+    .pagination{
+      padding: 20px 0;
+    }
+    .el-pagination,.el-pagination__total,.el-pagination__jump{
+      color: #fff !important;
+    }
+    .el-pagination button:disabled{
+      color: #999;
+      // background: @btnPrimary2;
+    }
+    // .el-pagination .el-input{
+    // }
+    .el-pagination{
+      input{
+        height: 30px !important;
+        margin-top: -2rpx;
+      }
+    }
+    .el-pagination .btn-next, .el-pagination .btn-prev{
+      padding: 0 4px !important;
+      border-radius: 4px;
+      background: none;
+      color: #fff;
+      margin: 0 5px;
+      // background: @btnPrimary2;
+    }
+    .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+      background: none ;
+      color: #fff;
+      border: 1px solid @btnPrimary2;
+    }
+    .el-pagination.is-background .btn-next.disabled,
+    .el-pagination.is-background .btn-next:disabled,
+    .el-pagination.is-background .btn-prev.disabled,
+    .el-pagination.is-background .btn-prev:disabled,
+    .el-pagination.is-background .el-pager li.disabled{
+      background: #999;
+      color: #666;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled).active{
+      background: @btnPrimary2;
+    }
+    .pagination{
+      text-align: center;
+    }
+  }
+
+  .el-dialog{
+    color: #fff;
+    background: @adminBlue9 !important;
+    .el-dialog__header{
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+    .el-checkbox,.el-dialog__body{
+      color: #fff;
+    }
+    .el-dialog__footer{
+      .btn{
+        width: 65px;
+        height: 32px;
+        padding: 8px 18px;
+      }
+      border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+    .el-dialog__title{
+      color: #fff !important;
+    }
+  }
+
+  .search-wrap{
+    .el-input,.el-input__inner{
+      width:200px;
+      height: 40px;
+    }
+    .el-date-editor--daterange.el-input__inner{
+      height: 40px;
+    }
+    .el-date-editor .el-range-separator{
+      color: #fff;
+    }
+    .el-date-editor .el-range-input{
+      color: #fff;
+      background: none;
+    }
+  }
+  .el-picker-panel{
+    color: #fff !important;
+    background: @adminBlue7 !important;
+    border: none !important;
+    box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.2);
+    .el-date-range-picker__content.is-left{
+      border-right: 1px solid rgba(255, 255, 255, 0.2)
+    }
+    .el-date-table th{
+      color: #fff !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    }
+    .el-date-table td.in-range,
+    .el-date-table td.in-range div{
+      background: #123882;
+    }
+    .el-date-table td.in-range div:hover{
+      color: #fff !important;
+      background: @btnPrimary2;
+    }
+  }
+  .el-picker-panel__body{
+    .el-picker-panel__icon-btn,
+    .el-date-picker__header-label{
+      color: #fff;
+    }
+  }
+  .el-picker-panel__footer{
+    background: @adminBlue7 !important;
+    .el-button--default,.el-button--default:hover{
+      color: #fff;
+      background: #346CD7;
+      border: 1px solid #346CD7;
+    }
+  }
+  .el-message-box{
+    background: @adminBlue9 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    .el-button{
+      color: #fff;
+      padding: 8px 14px !important;
+    }
+    .el-message-box__title,.el-message-box__content{
+      color: #fff;
+    }
+    .el-button:not(.el-button--primary){
+      border-radius: 2px;
+      background: none;
+      border: 1px solid #346CD7;
+    }
+  }
+  .el-time-panel{
+    background:@adminBlue7 !important;
+    .el-time-spinner__item{
+      color: #fff;
+    }
+    .el-time-panel__btn{
+      color: #999;
+    }
+    .el-time-spinner__item:hover{
+      background: @btnPrimary2 !important;;
+    }
+    .el-time-spinner__item.active{
+      color: #39E5EF !important;
+    }
+    .el-time-panel__content::after, .el-time-panel__content::before{
+      margin-top: -7px;
+    }
+  }
+  
+  
+.inp-line{
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  .t{
+    width: 120px;
+    line-height: 40px;
+  }
+  .inp{
+    width: 200px;
+  }
+}
+
+.fa{
+  display: block;
+  width: 120px;
+  height: 40px;
+  &.fa-battery-4{
+    background: url(./../assets/images/ele_green.png) no-repeat left center;
+    background-size:auto 100%;
+  }
+  &.fa-battery-3{
+    background: url(./../assets/images/ele_green2.png) no-repeat left center;
+    background-size:auto 100%;
+  }
+  &.fa-battery-2{
+    background: url(./../assets/images/ele_yellow.png) no-repeat left center;
+    background-size:auto 100%;
+  }
+  &.fa-battery-1{
+    background: url(./../assets/images/ele_red.png) no-repeat left center;
+    background-size:auto 100%;
+  }
+  &.fa-battery-0{
+    background: url(./../assets/images/ele_gray.png) no-repeat left center;
+    background-size:auto 100%;
+  }
+}
+
+input{
+  height: 40px !important;
+}
+.el-select{
+  .el-input__suffix{
+    height: 40px !important;
+  }
+}
+
+
+// 百度地图css样式
+
+.BMap_top,
+.BMap_center,
+.BMap_bottom{
+  background-color: #14429e!important;
+}
+.BMap_bottom,
+.BMap_top,
+.BMap_center{
+  display: none;
+}
+.BMap_bubble_content{
+  color: #89B2FF;
+}
+.BMap_pop>div>div:not(.BMap_bubble_content){
+  display: none;
+  // background-color: #14429e!important;
+}
+.BMap_pop>div
+.map-info-wrap{
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(0, 39,114, 0.5);
+  &>div{
+    line-height: 30px;
+  }
+}
+.BMap_pop{
+  img{
+    display: none;
+  }
+}
+.table-form-wrap{
+  
+  .inline-title{
+    min-width: 60px;
+  }
+  .search-wrap.flex-row{
+    flex-wrap: wrap;
+    &>div{
+    }
+  }
+}
+
+
+// 
+
+.el-date-table td.disabled div{
+  background-color: transparent !important;
+  color: gray !important;
+}
