@@ -7,3 +7,10 @@
   HUGO_VERSION = "0.89.4"
   NODE_VERSION = "16.17.1"
   NPM_VERSION = "8.15.0"
+
+[[redirects]]
+  from = "/apis/"
+  to = "https://wudeng.tooaa.com"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
