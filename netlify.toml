@@ -10,6 +10,6 @@
 
 [[redirects]]
   from = "/apis/*"
-  to = "http://119.3.224.134:89/:splat"
+  to = "https://wudeng.tooaa.com/:splat"
   status = 200
   force = true
